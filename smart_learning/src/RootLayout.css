@@ -1,0 +1,49 @@
+.root-layout {
+    min-height: 100vh;
+  }
+  
+ .main-content{
+  width: 100%;
+ }
+  
+  .with-sidebar .main-content {
+    margin-left: 250px; /* Ensure content is placed next to the sidebar */
+  }
+  
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    padding: 15px;
+    color:white;
+
+  }
+  
+  .nav-item:hover {
+    background-color: #34495e;
+    color: white;
+  }
+  
+
+  @media (max-width: 769px) {
+    .with-sidebar .main-content {
+        margin-left:50px; /* Ensure content is placed next to the sidebar */
+    }
+
+    .sidebar {
+        width: 250px; /* Ensure sidebar is wider on larger screens */
+        position: fixed; /* Keep sidebar fixed on larger screens */
+    }
+
+    .navbar-toggler {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}

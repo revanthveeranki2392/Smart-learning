@@ -1,0 +1,65 @@
+/* Common container for flash cards (both login and signup) */
+.flash-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the flash card itself */
+.flash-card {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Adds scroll when content overflows */
+}
+
+/* Profile image styles for signup */
+.profile-image-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.default-image-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+}
+
+/* Submit button styling */
+.submit-btn {
+  padding: 10px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Skill list styles for signup */
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+}

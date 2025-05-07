@@ -1,0 +1,31 @@
+/* Admintest.css */
+
+.containersadmin {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .select-skill,
+  .select-level {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+  
+  .border {
+    border: 1px solid #ced4da;
+  }
+  
+  .shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary,
+  .btn-success {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .btn-danger {
+    margin-top: 10px;
+  }
+  

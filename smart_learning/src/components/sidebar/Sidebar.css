@@ -1,0 +1,154 @@
+.sidebar {
+    width: 250px; /* Default width for larger screens */
+    background-color: #050222; /* Background color */
+    color: white; /* Text color */
+    height: 100vh; /* Full height */
+    padding: 10px;
+    position: fixed; /* Keep it fixed */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.nav-item {
+    display: flex; /* Align icons and text */
+    flex-direction: row; /* Icons and text side by side for larger screens */
+    align-items: center; /* Center align items */
+    padding: 10px 15px; /* Add some padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* Icon color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}
+
+.nav-text {
+    margin-left: 10px; /* Space between icon and text */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px !important; /* Reduced width for smaller screens */
+    }
+
+    .nav-item {
+        flex-direction: column; /* Stack text below the icon */
+        align-items: center; /* Center align items */
+        padding: 0px; /* Adjust padding for top and bottom */
+    }
+
+    .nav-text {
+        display: none; /* Hide the text by default */
+    }
+
+    /* Show the nav-text when hovered */
+    .nav-item:hover .nav-text {
+        display: block; /* Show text on hover */
+        position: absolute; /* Position it */
+        left: 60px; /* Adjust to appear outside the sidebar */
+        background-color: #343a40; /* Same background color */
+        padding: 5px 10px; /* Padding for the text */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 14px; /* Adjust text size */
+        white-space: nowrap; /* Ensure text doesn't wrap */
+        z-index: 1; /* Bring it to front */
+    }
+}
+.nav-submenu {
+    padding-left: 20px; /* Indent submenu */
+  }
+  
+  .nav-submenu .nav-item {
+    padding: 5px 10px; /* Adjust padding for submenu items */
+    color: #ccc; /* Lighter text for submenu */
+  }
+  
+  .nav-submenu .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly different hover color */
+  }
+  
+  .nav-submenu .nav-text {
+    font-size: 14px; /* Smaller font size for submenu */
+  }
+  .sidebar {
+    width: 250px;
+    background-color: #050222;
+    color: white;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    transition: width 0.3s ease;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-text {
+    margin-left: 10px;
+}
+
+/* Submenu styles */
+.nav-submenu {
+    padding-left: 20px;
+}
+
+.nav-submenu .nav-item {
+    padding: 5px 10px;
+    color: #ccc;
+}
+
+.nav-submenu .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-submenu .nav-text {
+    font-size: 14px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .nav-item {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-item:hover .nav-text {
+        display: block;
+        position: absolute;
+        left: 60px;
+        white-space: nowrap;
+        background-color: #333;
+        padding: 5px 10px;
+    }
+}
+
+.navbar-logo img {
+    max-width: 200px;  /* Adjust the size as needed */
+    height: auto;  /* Maintain aspect ratio */
+  }
+  
+  @media (max-width: 768px) {
+    /* For smaller screens, adjust the logo size */
+    .navbar-logo img {
+      max-width: 120px;
+    }
+  }

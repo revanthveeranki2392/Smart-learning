@@ -1,0 +1,54 @@
+.admin-skill-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-skill-col {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .admin-skill-form .skill-input {
+    border-radius: 5px;
+  }
+  
+  .add-skill-btn {
+    background-color: #0b644c;
+    border-color:#0b644c;
+  }
+  
+  .add-skill-btn:hover {
+    background-color:#0b644c;
+    border-color:#0b644c;
+  }
+  
+  .skill-list {
+    margin-top: 20px;
+  }
+  
+  .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .delete-btn {
+    background-color: #830606;
+    border-color: #dc3545;
+    padding: 2px 10px;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  .loading-spinner {
+    display: block;
+    margin: 20px auto;
+  }
+  

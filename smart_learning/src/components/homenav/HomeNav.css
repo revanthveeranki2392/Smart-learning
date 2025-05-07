@@ -1,0 +1,236 @@
+nav
+{
+    width:100%;
+    /* background-color: #333; */
+    color:#fff;
+    padding:4px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.logo
+{
+    width:100px;
+  margin-left:50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin:5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.container-fluid {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .btn
+  {
+    background: white;
+    color:#212121;
+    padding:14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    border:0;
+    outline:0;
+  
+  }
+  .btn:hover
+  {
+    border: 2px solid white;
+    padding:-2px;
+    margin:-2px;
+  }
+  .navwid
+  {
+    padding-left: 10%;
+    padding-right: 8%;
+    margin-bottom:8px;
+    margin-top:8px;
+  }
+  .dark-nav
+  {
+    background:#212EA0;
+    transition:0.5s;
+  }
+.menu-icon
+{
+  display:none;
+}
+  /* media queries */
+  @media (max-width:1200px)
+  {
+    .container-fluid
+    {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .btn
+    {
+      padding:14px 22px;
+    }
+  }
+   @media (max-width:1000px)
+   {
+    .logo{
+      width:140px;
+    }
+    nav ul li
+    {
+      margin:10px 15px;
+    }
+   }
+   @media (max-width:840px)
+   {
+    nav
+    {
+      padding:15px 0px;
+    }
+    nav ul{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      background:#212EA0;
+      z-index:-1;
+      padding-top:70px;
+      transition:0.5s;
+      width:200px;
+    }
+    nav ul li
+    {
+      display:block;
+      margin:25px 0px;
+    }
+   .menu-icon{
+    display:block;
+    width:30px;
+    cursor:pointer;
+    color:white;
+   }
+   .hide-mobile-menu{
+    right:-200px;
+   }
+   }
+
+   /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* Modal styles */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/* Disable scrolling on the body when the login card is open */
+.no-scroll {
+  overflow: hidden;
+  height: 100%;  /* Ensure it prevents both horizontal and vertical scroll */
+}
+
+
+/* Styling for the login card container */
+.login-card-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Login card design */
+/* Login card design with increased width */
+.login-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 1000px\\;  /* Increase the width for larger screens */
+  max-width: 90%;  /* Ensure responsiveness on smaller screens */
+  position: relative;
+  height:90vh;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .login-card {
+    width: 400px;  /* Adjust the width for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    width: 100%;  /* For very small screens, make it full-width */
+    padding: 15px;
+  }
+}
+
+
+.login-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+.close-icon:hover {
+  color: red;
+}

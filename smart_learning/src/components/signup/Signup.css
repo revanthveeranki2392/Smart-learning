@@ -1,0 +1,95 @@
+/* Common container for flash cards (both login and signup) */
+.flash-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  height: 80vh;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the flash card itself */
+.flash-card {
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Adds scroll when content overflows */
+  max-height: 75vh; /* Prevents card overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Profile image styles for signup */
+.profile-image-preview, .default-image-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.default-image-preview {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="email"], input[type="password"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box; /* Prevents overflow from padding */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: -10px;
+}
+
+/* Submit button styling */
+.submit-btn {
+  padding: 12px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Switch button */
+.switch-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.switch-btn:hover {
+  color: #0056b3;
+}

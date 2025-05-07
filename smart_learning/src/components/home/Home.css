@@ -1,0 +1,118 @@
+.hero
+{
+    width:100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    background:linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../../src/assets/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text
+{
+    text-align: center;
+    max-width: 800px;
+}
+.hero-text h1
+{
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero-text p
+{
+    max-width: 700px;
+    margin:10px auto 20px;
+    line-height: 1.4;
+}
+
+
+.login-card-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .login-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px; /* Width of the login card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-icon {
+    cursor: pointer;
+    font-size: 24px; /* Size of the close icon */
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  .question-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .card-container {
+    display: flex;
+    overflow-x: hidden; /* Hide the horizontal scroll bar */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding: 20px; /* Add padding around the cards */
+    scroll-snap-type: x mandatory;
+    width:100%; /* Enable scroll snapping */
+  }
+  
+  .card {
+    min-width: 500px; /* Minimum width for each card */
+    margin: 50px 10px; /* Space between cards */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start; /* Align cards to start when snapping */
+  }
+  
+  .scroll-btn {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make circular */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .scroll-btn:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  
+  .scroll-btn.left {
+    position: absolute;
+    left: 10px; /* Position the left button */
+    z-index: 1; /* Ensure it is above other elements */
+  }
+  
+  .scroll-btn.right {
+    position: absolute;
+    right: 10px; /* Position the right button */
+    z-index: 1; /* Ensure it is above other elements */
+  }

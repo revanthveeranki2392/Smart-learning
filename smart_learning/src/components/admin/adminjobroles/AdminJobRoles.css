@@ -1,0 +1,76 @@
+.admin-jobroles-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobrole-form {
+    background-color: #fff;
+    width:60%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin:10px 220px;
+
+  }
+  
+  .jobrole-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .jobrole-form .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .custom-input {
+    margin-bottom:10px;
+  }
+  
+  .custom-input:focus {
+    box-shadow: none;
+    border-color: #252626;
+  }
+  
+  .custom-btn {
+    background-color: #0b644c;
+    border: none;
+    color: white;
+  }
+  
+  .custom-btn:hover {
+    background-color: #094c3c;
+  }
+  
+  .deletes-btn {
+    background-color: #830606;
+    border: none;
+    color: white;
+
+  }
+  
+  .deletes-btn:hover {
+    background-color: #6d0505;
+  }
+  
+  .jobrole-table th,
+  .jobrole-table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .jobrole-table td .btn-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-group .btn {
+    flex: 1;
+    margin-right: 5px;
+  }
+  
+  .btn-group .btn:last-child {
+    margin-right: 0;
+  }
+  
